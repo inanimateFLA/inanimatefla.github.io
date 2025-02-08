@@ -23,17 +23,24 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            text-shadow: 2px 2px 4px #000000;
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
+            text-align: center;
+
+            position: relative;
+            z-index: 1;
+            background: none; /* Ensure it doesn't interfere */
         }
 
         h1, h2 {
             font-weight: 500;
             margin-bottom: 10px;
+            text-shadow: 2px 2px 4px #000000;
         }
 
         .title {
@@ -49,6 +56,7 @@
         .title-svg {
             width: 300px; /* Adjust size as needed */
             height: auto;
+            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
         }
 
         .info, .update {
@@ -85,6 +93,7 @@
             border-radius: 10px;
             cursor: pointer;
             transition: transform 0.2s, filter 0.2s;
+            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
         }
 
         .download:hover {
@@ -104,9 +113,9 @@
 
         .credits {
             text-align: left;
-            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
-            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Darker separate box */
+            border-radius: 10px; /* Keep rounded corners here */
             margin-top: 30px;
         }
 
@@ -125,6 +134,16 @@
             margin-bottom: 8px;
         }
 
+        /* Background block for main content (stops at updates) */
+        .main-content {
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+            width: 100%;
+            max-width: 900px;
+            box-sizing: border-box; /* Ensures padding doesn't affect the width */
+            padding: 20px; /* Space inside the background */
+            border-radius: 10px; /* Remove rounded corners */
+        }
+
         /* Mobile Responsive */
         @media (max-width: 600px) {
             .container {
@@ -141,43 +160,44 @@
 </head>
 
 <body>
-
     <div class="bggradient"></div>
 
     <div class="container">
-        <div class="title">
-            <img src="ii%20logo.svg" width="300" class="title-svg">
-            <h1>Inanimate Insanity II COMMUNITY .FLA</h1>
+        <div class="main-content">
+            <div class="title">
+                <img src="ii%20logo.svg" width="300" class="title-svg">
+                <h1>Inanimate Insanity II COMMUNITY .FLA</h1>
+            </div>
+            <p class="info">ANYONE CAN CONTRIBUTE! Submit your FLA at <a href="https://forms.gle/uXS52KXoBr4D5ioe9" target="_blank">this form</a> for review.</p>
+
+            <h2><b>DOWNLOADS</b></h2>
+            <div class="buttons">
+                <a href="https://github.com/Yell038/inanimatefla-dl/releases/download/0.5.0/II2_16+.fla" download>
+                    <button class="download">II2 COMMUNITY FLA v0.5.0</button>
+                </a>
+                <a href="https://github.com/Yell038/inanimatefla-dl/releases/download/0.5.0/inanimateSnippets.fla" download>
+                    <button class="download">II2 Snippets Download</button>
+                </a>
+            </div>
+
+            <h2><b>Rules (Usage)</b></h2>
+            <p class="info">
+                - Please link this website whenever possible to credit our contributors! (Required)<br>
+                - Contributions made by Yell038 are free to use without credit (e.g., base mouths, MePhone4, MePad).
+            </p>
+
+            <h2><b>Rules and Terms (Submissions)</b></h2>
+            <p class="info">
+                - You are responsible for what happens to your work.<br>
+                - Only characters that have appeared in the show or any other animated II short are allowed.<br>
+                - You must use the latest update's limbs and mouths when submitting a rig.
+            </p>
+
+            <h2><b>Update Log</b></h2>
+            <p class="update">
+                <a href="https://github.com/Yell038/inanimatefla-dl/releases/tag/0.5.0" target="_blank">View Latest Updates</a>
+            </p>
         </div>
-        <p class="info">ANYONE CAN CONTRIBUTE! Submit your FLA at <a href="https://forms.gle/uXS52KXoBr4D5ioe9" target="_blank">this form</a> for review.</p>
-
-        <h2><b>DOWNLOADS</b></h2>
-        <div class="buttons">
-            <a href="https://github.com/Yell038/inanimatefla-dl/releases/download/0.5.0/II2_16+.fla" download>
-                <button class="download">II2 COMMUNITY FLA v0.5.0</button>
-            </a>
-            <a href="https://github.com/Yell038/inanimatefla-dl/releases/download/0.5.0/inanimateSnippets.fla" download>
-                <button class="download">II2 Snippets Download</button>
-            </a>
-        </div>
-
-        <h2><b>Rules (Usage)</b></h2>
-        <p class="info">
-            - Please link this website whenever possible to credit our contributors! (Required)<br>
-            - Contributions made by Yell038 are free to use without credit (e.g., base mouths, MePhone4, MePad).
-        </p>
-
-        <h2><b>Rules and Terms (Submissions)</b></h2>
-        <p class="info">
-            - You are responsible for what happens to your work.<br>
-            - Only characters that have appeared in the show or any other animated II short are allowed.<br>
-            - You must use the latest update's limbs and mouths when submitting a rig.
-        </p>
-
-        <h2><b>Update Log</b></h2>
-        <p class="update">
-            <a href="https://github.com/Yell038/inanimatefla-dl/releases/tag/0.5.0" target="_blank">View Latest Updates</a>
-        </p>
 
         <section class="credits">
             <h2><b>Credits (Specific contrirbutions in the .fla)</b></h2>
