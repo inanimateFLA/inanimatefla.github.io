@@ -39,7 +39,7 @@
 
             position: relative;
             z-index: 1;
-            background: none; /* Ensure it doesn't interfere */
+            background: none;
         }
 
         h1, h2 {
@@ -51,15 +51,15 @@
         .title {
             font-size: 25px;
             display: flex;
-            flex-direction: column; /* Stack items vertically */
-            align-items: center; /* Center horizontally */
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            gap: 2px; /* Space between SVG and text */
+            gap: 2px;
             font-family: Shag, sans-serif;
         }
 
         .title-svg {
-            width: 300px; /* Adjust size as needed */
+            width: 300px;
             height: auto;
             filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
         }
@@ -126,8 +126,8 @@
         .credits {
             text-align: left;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Darker separate box */
-            border-radius: 10px; /* Keep rounded corners here */
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
             flex: 1;
             min-width: 300px;
         }
@@ -147,17 +147,15 @@
             margin-bottom: 8px;
         }
 
-        /* Background block for main content (stops at updates) */
         .main-content {
-            background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+            background-color: rgba(0, 0, 0, 0.5);
             width: 100%;
             max-width: 900px;
-            box-sizing: border-box; /* Ensures padding doesn't affect the width */
-            padding: 20px; /* Space inside the background */
-            border-radius: 10px; /* Remove rounded corners */
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 10px;
         }
 
-        /* Mobile Responsive */
         @media (max-width: 600px) {
             .container {
                 padding: 10px;
@@ -171,6 +169,16 @@
             .credits-container {
                 flex-direction: column;
             }
+        }
+
+        .unaffiliated-downloads {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 900px;
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -189,25 +197,17 @@
             <h2><b>DOWNLOADS</b></h2>
             <div class="buttons">
                 <a href="https://github.com/Yell038/inanimatefla-dl/releases/download/0.5.0/II2_16+.fla" download>
-                    <button class="download">Inanimate Insanity II (v0.5.0)</button>
+                    <button class="download">II2 15+ (v0.5.0)</button>
                 </a>
-                <a href="https://file.garden/aGXTmqz0wiExqxYf/II3%20ASSETS-2.fla" download>
-                    <button class="download">Inanimate Insanity III (v2)</button>
-                </a>
-                <a href="https://github.com/Yell038/inanimatefla-dl/releases/download/R2/II.REMASTERED.ASSETS.fla" download>
-                    <button class="download">Inaimate Insanity REMAKE (v2)</button>
-                </a>
+                
                 <a href="https://github.com/Yell038/inanimatefla-dl/releases/download/FOUR1/II.4.fla" download>
-                    <button class="download">Inaimate Insanity IV (v1)</button>
-                </a>
-                <a href="https://github.com/Yell038/inanimatefla-dl/releases/download/0.5.0/inanimateSnippets.fla" download>
-                    <button class="download">II2 Snippets Download</button>
+                    <button class="download">IV (v1)</button>
                 </a>
             </div>
 
             <h2><b>Rules (Usage)</b></h2>
             <p class="info">
-                - Please LINK THE WEBSITE to credit us! Do NOT only credit Yell038 as it doesn't bring attention to our other contributors.
+                - Please LINK THE WEBSITE to credit everyone.
                 <br>
                 - We are not comfortable with our recreations to be used for innapropriate content. Please refrain from doing so.
             </p>
@@ -225,9 +225,60 @@
             </p>
         </div>
 
+        <div class="unaffiliated-downloads">
+            <div class="title">
+                <h1>OTHER DOWNLOADS</h1>
+            </div>
+            <p class="info">
+                These .fla's were not made by the directors of the Community project, but redistributed here for convenience.
+            </p>
+
+            <div class="buttons">
+                <a href="https://file.garden/aGXTmqz0wiExqxYf/II2_Assets.fla" download>
+                    <button class="download">II2 13-14 (v2)</button>
+                </a>
+                <a href="https://file.garden/aGXTmqz0wiExqxYf/II3%20ASSETS-2.fla" download>
+                    <button class="download">III (v2)</button>
+                </a>
+            </div>
+        </div>
+
         <div class="credits-container">
             <section class="credits">
-                <h2><b>Credits (II2 RECREATION)</b></h2>
+                <h2><b>Credits (II1 REMAKE RECREATION)</b></h2>
+                <ul>
+                    <li><strong>Yell038:</strong> Project Owner, Rig Creator, Asset Creator</li>
+                    <li><strong>geo.maxim:</strong> Character Asset Creator</li>
+                    <li><strong>violet:</strong> Asset Creator, Mouth Creator</li>
+                    <li><strong>McBoi:</strong> Asset Creator, Background Creator</li>
+                    <li><strong>JohnAnimations:</strong> Character Asset Creator</li>
+                    <li><strong>Mack Garza:</strong> Character Asset Creator</li>
+                    <li><strong>proplayermega:</strong> Character Asset Creator</li>
+                    <li><strong>CoinzAnimated:</strong> Background Creator</li>
+                    <li><strong>Diegozardx:</strong> Asset Polisher</li>
+                    <li><strong>MaksioGames:</strong> Asset Creator</li>
+                    <li><strong>RanDUMBness:</strong> Rig Fixer, Asset Creator, Asset Fixer, Mouth Creator</li>
+                    <li><strong>Belatrix:</strong> Mouth Creator</li>
+                    <li><strong>swagbski:</strong> Eyes Fixer</li>
+                    <li><strong>DragonFlame42:</strong> Mouth Fixer, Mouth Creator</li>
+                    <li><strong>stars4miles_:</strong> Rig Fixer, Asset Fixer</li>
+                    <li><strong>Maskyn:</strong> Asset Creator</li>
+                    <li><strong>kendelon:</strong> Rig Creator</li>
+                    <li><strong>ElZekaron:</strong> Asset Creator</li>
+                    <li><strong>DimbiOfficial:</strong> Asset Creator</li>
+                </ul>
+            </section>
+
+            <section class="credits">
+                <h2><b>Credits (II2 13-14)</b></h2>
+                <ul>
+                    <li><strong>FrameByFramer:</strong> Project Owner</li>
+                    <li><strong>PowerGlasses2000:</strong> Project Owner</li>
+                </ul>
+            </section>
+
+            <section class="credits">
+                <h2><b>Credits (II2 15+)</b></h2>
                 <ul>
                     <li><strong>Yell038:</strong> Project Owner, Rig Creator, Asset Creator, Hotel OJ</li>
                     <li><strong>C115007:</strong> Website Design, More Legs</li>
@@ -275,27 +326,9 @@
             </section>
 
             <section class="credits">
-                <h2><b>Credits (II1 REMAKE RECREATION)</b></h2>
+                <h2><b>Credits (III)</b></h2>
                 <ul>
-                    <li><strong>Yell038:</strong> Project Owner, Rig Creator, Asset Creator</li>
-                    <li><strong>geo.maxim:</strong> Character Asset Creator</li>
-                    <li><strong>violet:</strong> Asset Creator, Mouth Creator</li>
-                    <li><strong>McBoi:</strong> Asset Creator, Background Creator</li>
-                    <li><strong>JohnAnimations:</strong> Character Asset Creator</li>
-                    <li><strong>Mack Garza:</strong> Character Asset Creator</li>
-                    <li><strong>proplayermega:</strong> Character Asset Creator</li>
-                    <li><strong>CoinzAnimated:</strong> Background Creator</li>
-                    <li><strong>Diegozardx:</strong> Asset Polisher</li>
-                    <li><strong>MaksioGames:</strong> Asset Creator</li>
-                    <li><strong>RanDUMBness:</strong> Rig Fixer, Asset Creator, Asset Fixer, Mouth Creator</li>
-                    <li><strong>Belatrix:</strong> Mouth Creator</li>
-                    <li><strong>swagbski:</strong> Eyes Fixer</li>
-                    <li><strong>DragonFlame42:</strong> Mouth Fixer, Mouth Creator</li>
-                    <li><strong>stars4miles_:</strong> Rig Fixer, Asset Fixer</li>
-                    <li><strong>Maskyn:</strong> Asset Creator</li>
-                    <li><strong>kendelon:</strong> Rig Creator</li>
-                    <li><strong>ElZekaron:</strong> Asset Creator</li>
-                    <li><strong>DimbiOfficial:</strong> Asset Creator</li>
+                    <li><strong>bubblemagician:</strong> Project Owner</li>
                 </ul>
             </section>
 
@@ -317,17 +350,9 @@
                     <li><strong>Cheesescript:</strong> .fla Tester</li>
                 </ul>
             </section>
-
-            <section class="credits">
-                <h2><b>Credits (III)</b></h2>
-                <ul>
-                    <li><strong>bubblemagician:</strong> Project Owner</li>
-                </ul>
-            </section>
         </div>
     </div>
 
 </body>
 
 </html>
-
